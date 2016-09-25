@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:minHeight="70dp"
+    android:background="@drawable/content_bg"
+    >
+    
+    <TextView
+        android:id="@+id/item_diary_weekday"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:textSize="16sp" 
+        android:background="@drawable/textborder"/>
+    
+    <TextView
+        android:id="@+id/item_diary_date"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="top"
+        android:layout_below="@id/item_diary_weekday"
+        android:gravity="center"
+        android:textSize="20sp" 
+		android:background="@drawable/textborder"/>
+    	
+    <TextView
+        android:id="@+id/item_diary_content"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_gravity="top"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/item_diary_weekday"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|left"
+        android:lines="2"
+		android:ellipsize="end"
+        android:textSize="20sp" 
+		android:background="@drawable/textborder"/>
+   
+</RelativeLayout>
+
+

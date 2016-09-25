@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0" >
+    
+    <LinearLayout 
+       android:id="@+id/main_linear"
+       android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="100dp"
+       android:layout_above="@+id/bottom_menu"
+	   android:layout_alignParentTop="true"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="10dp">
+       <ListView android:id="@+id/main_list"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:scrollbars="none"
+		    android:divider="#00000000"
+			android:dividerHeight="10dp">
+		</ListView>
+   </LinearLayout>
+	<RelativeLayout 
+	       android:id="@id/bottom_menu"
+	       android:orientation="horizontal"
+        android:layout_width="fill_parent"
+       android:layout_height="60dp"
+       android:padding="5dp"
+       android:layout_alignParentBottom="true">
+	    <TextView android:id="@+id/bottom_menu_month" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:layout_alignParentLeft="true" 
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	         android:text="JULY"
+	        android:textSize="20sp" 
+	        android:gravity="center" />
+	    <TextView android:id="@+id/bottom_menu_year" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:layout_toRightOf="@id/bottom_menu_month"
+	         android:text="2016"
+	        android:textSize="20sp" 
+	        android:gravity="center" />
+	    <TextView android:id="@+id/bottom_menu_browse" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:layout_alignParentRight="true" 
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	         android:text="BROWSE"
+	        android:textSize="20sp" 
+	        android:gravity="center" />
+	    <TextView android:id="@+id/bottom_menu_add" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent" 
+	        android:layout_centerInParent="true" 
+	         android:text="ADD"
+	        android:textSize="20sp" 
+	        android:gravity="center" />
+	    
+	</RelativeLayout>
+    <HorizontalScrollView 
+        android:id="@+id/bottom_month_list"
+        android:layout_width="fill_parent"
+       android:layout_height="60dp"
+       android:padding="5dp"
+       android:layout_alignParentBottom="true"
+       android:scrollbars="none"
+       android:visibility="gone">
+	   <LinearLayout 
+	       android:orientation="horizontal"
+	       android:layout_width="wrap_content"
+	       android:layout_height="60dp"
+	       android:layout_gravity="center_vertical" >
+	       
+	       <TextView android:id="@+id/month_1 "
+	           style="@style/month"
+	        android:text="JAN"/>
+	       <TextView android:id="@+id/month_2 "
+	           style="@style/month"
+	        android:text="FEB"/>
+	       <TextView android:id="@+id/month_3 "
+	           style="@style/month"
+	        android:text="MAR"/>
+	       <TextView android:id="@+id/month_4 "
+	           style="@style/month"
+	        android:text="APR"/>
+	       <TextView android:id="@+id/month_5 "
+	           style="@style/month"
+	        android:text="MAY"/>
+	       <TextView android:id="@+id/month_6 "
+	           style="@style/month"
+	        android:text="JUN"/>
+	       <TextView android:id="@+id/month_7 "
+	           style="@style/month"
+	        android:text="JUL"/>
+	       <TextView android:id="@+id/month_8 "
+	           style="@style/month"
+	        android:text="AUG"/>
+	       <TextView android:id="@+id/month_9 "
+	           style="@style/month"
+	        android:text="SEP"/>
+	       <TextView android:id="@+id/month_10 "
+	           style="@style/month"
+	        android:text="OCT"/>
+	       <TextView android:id="@+id/month_11 "
+	           style="@style/month"
+	        android:text="NOV"/>
+	       <TextView android:id="@+id/month_12 "
+	           style="@style/month"
+	        android:text="DEC"/>
+	   </LinearLayout>
+   </HorizontalScrollView>
+</RelativeLayout>
