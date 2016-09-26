@@ -17,9 +17,6 @@ import com.example.MyNote.R;
 import java.util.Calendar;
 import java.util.List;
 
-/**
- * Created by jafir on 15/9/14.
- */
 public class MyAdapter extends BaseAdapter {
 
 

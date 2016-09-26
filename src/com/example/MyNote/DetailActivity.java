@@ -130,10 +130,15 @@ public class DetailActivity extends Activity {
     public static boolean save(Context context,int year,int month,int day,String content)
     {
 //    	  Log.i("rootdir", getFilesDir()+"");
+    	String dir_str0="MyNote";
     	String dir_str=String.format("%d%02d",year,month);
 //          File destDir = new File(context.getFilesDir()+"/"+dir_str);
-    	
-           File destDir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+"/"+dir_str);
+    	 File destDir0 = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+"/"+dir_str0);
+	       	if (!destDir0.exists()) {
+	        if(destDir0.mkdirs()==false)
+	     	   return false;
+	       }
+           File destDir = new File(destDir0.getPath()+"/"+dir_str);
           	if (!destDir.exists()) {
            if(destDir.mkdirs()==false)
         	   return false;

@@ -260,7 +260,7 @@ public class MainActivity extends Activity   {
     }
 
     public void loadAllData(int year,int month,List<Item_diary> data){
-    	String dir=Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+"/"+year+String.format("%02d", month);
+    	String dir=Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS)+"/MyNote/"+year+String.format("%02d", month);
     	File destDir = new File(dir);
     	String paths[]=destDir.list();
     	if(paths!=null)
