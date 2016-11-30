@@ -301,41 +301,5 @@ public class MainActivity extends Activity   {
         int maxDate = a.get(Calendar.DATE);  
         return maxDate;  
     }  
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if (id == R.id.action_settings) {
-//        	File destDir = new File(getFilesDir().toString()+"");
-//        	String paths[]=destDir.list();
-//        	for(String path:paths){
-//        		if(new File(getFilesDir()+"/"+path).isDirectory())
-//        			Log.i("Dir", path);
-//        		else {
-//        			Log.i("file", path);
-//				}
-//        	}
-            return true;
-        }else if(id == R.id.action_save){
-//        	save(2016,7,1,"这是最气的哈哈哈哈");
-//        	save(2016,7,3,"这个是需要换行的！！！！\n好好好\n再换\n");
-//        	save(2016,7,5,"这个是不换行但是很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很很长");
-//        	save(2016,7,12,"                                                                         这个前面后面都是空格                                                                         ");
-//        	save(2016,7,25,"xxxxxxx");
-        	return true;
-        }else if(id == R.id.action_load){
-//        	load();
-        	return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
